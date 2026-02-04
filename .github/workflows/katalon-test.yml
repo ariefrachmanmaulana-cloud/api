@@ -20,4 +20,4 @@ jobs:
           # Jangan pakai 'latest', pakai versi spesifik biar nggak error download
           version: '9.6.0' 
           projectPath: '${{ github.workspace }}'
-          args: '-noGui -testSuitePath="Test Suites/API/API_User" -browserType="Web Service" -apiKey=${{ secrets.KATALON_API_KEY }}' 
+          args: '-noGui -testSuitePath="Test Suites/API/API_User" -browserType="Web Service" -apiKey=${{ secrets.KATALON_API_KEY }} --info'
