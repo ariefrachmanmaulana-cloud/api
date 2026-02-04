@@ -1,0 +1,22 @@
+name: CI Katalon API Test
+
+# Menentukan kapan tes berjalan (setiap kali push ke main)
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Execute API
+        uses: katalon-studio/katalon-studio-github-action@v3
+        with:
+          version: 'latest'
+          args: '-noSplash -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }}'
