@@ -1,0 +1,46 @@
+2026-02-04 15:26:36.037 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\Secondary\.katalon\packages\KS-11.0.0\configuration\org.eclipse.osgi\148\0\.cp\resources\logback\logback-execution.xml
+2026-02-04 15:26:36.052 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\Secondary\Katalon Studio\API\Include\config\log.properties
+2026-02-04 15:26:36.341 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/API/API_User
+2026-02-04 15:26:36.558 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Arief Rachman Maulana
+2026-02-04 15:26:36.560 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = API
+2026-02-04 15:26:36.561 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = Secondary - Klola
+2026-02-04 15:26:36.564 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-02-04 15:26:36.565 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.104
+2026-02-04 15:26:36.570 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.0.0.0
+2026-02-04 15:26:37.848 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-04 15:26:37.849 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_API_User
+2026-02-04 15:26:38.550 DEBUG testcase.TC_API_User                     - 1: sendRequestAndVerify(findTestObject("API/GET_User_List"))
+2026-02-04 15:26:40.276 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\Secondary\Katalon Studio\API\Reports\20260204_152623\API\API_User\20260204_152623\requests\main\GET_User_List_0.har
+2026-02-04 15:26:40.282 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36' \
+  'https://jsonplaceholder.typicode.com/posts/1'
+2026-02-04 15:26:40.579 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2026-02-04 15:26:40.580 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2026-02-04 15:26:40.744 DEBUG testcase.GET_User_List                   - 1: response = getInstance().getCurrentResponse()
+2026-02-04 15:26:40.749 DEBUG testcase.GET_User_List                   - 2: verifyResponseStatusCode(response, 200)
+2026-02-04 15:26:40.816 DEBUG testcase.GET_User_List                   - 3: verifyElementPropertyValue(response, "id", 1)
+2026-02-04 15:26:40.978 DEBUG testcase.GET_User_List                   - 4: containsString(response, "sunt aut facere", false)
+2026-02-04 15:26:41.013 INFO  c.k.k.core.main.WSVerificationExecutor   - END Verification
+2026-02-04 15:26:41.100 DEBUG testcase.TC_API_User                     - 2: sendRequestAndVerify(findTestObject("API/POST_User_List"))
+2026-02-04 15:26:41.951 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: C:\Users\Secondary\Katalon Studio\API\Reports\20260204_152623\API\API_User\20260204_152623\requests\main\POST_User_List_1.har
+2026-02-04 15:26:41.964 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --request POST \
+  --data '{"title":"API Katalon","body":"Ini adalah postingan pertama Arief Rachman Maulana","userId":1}' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36' \
+  'https://jsonplaceholder.typicode.com/posts'
+2026-02-04 15:26:42.026 INFO  c.k.k.core.main.WSVerificationExecutor   - --------------------
+2026-02-04 15:26:42.026 INFO  c.k.k.core.main.WSVerificationExecutor   - START Verification
+2026-02-04 15:26:42.081 DEBUG testcase.POST_User_List                  - 1: response = getInstance().getCurrentResponse()
+2026-02-04 15:26:42.084 DEBUG testcase.POST_User_List                  - 2: verifyResponseStatusCode(response, 201)
+2026-02-04 15:26:42.092 DEBUG testcase.POST_User_List                  - 3: verifyElementPropertyValue(response, "title", "API Katalon")
+2026-02-04 15:26:42.131 DEBUG testcase.POST_User_List                  - 4: verifyElementPropertyValue(response, "id", 101)
+2026-02-04 15:26:42.169 INFO  c.k.k.core.main.WSVerificationExecutor   - END Verification
+2026-02-04 15:26:42.176 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_API_User
+2026-02-04 15:26:42.260 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-02-04 15:26:42.260 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/API/API_User
+2026-02-04 15:26:42.261 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

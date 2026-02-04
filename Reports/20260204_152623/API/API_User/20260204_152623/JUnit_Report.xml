@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="API_User" time="5.681" tests="1" failures="0" errors="0">
+   <testsuite name="API_User" tests="1" failures="0" errors="0" time="5.681" skipped="0" timestamp="2026-02-04T08:26:36.495Z" hostname="Secondary - Klola" id="Test Suites/API/API_User">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Secondary\\Katalon Studio\\API\\Reports\\20260204_152623\\API\\API_User\\20260204_152623"/>
+         <property name="logFiles" value="C:\\Users\\Secondary\\Katalon Studio\\API\\Reports\\20260204_152623\\API\\API_User\\20260204_152623\\console0.log, C:\\Users\\Secondary\\Katalon Studio\\API\\Reports\\20260204_152623\\API\\API_User\\20260204_152623\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="Secondary - Klola"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.0.0.0"/>
+         <property name="userFullName" value="Arief Rachman Maulana"/>
+         <property name="hostAddress" value="192.168.0.104"/>
+         <property name="projectName" value="API"/>
+      </properties>
+      <testcase name="Test Cases/TC_API_User" time="4.327" classname="ef876a14-bd6f-4be3-94ae-6fc968c86d20" status="PASSED">
+         <system-out><![CDATA[04-02-2026T15:26:37 - [TEST_CASE][PASSED] - Test Cases/TC_API_User: Test Cases/TC_API_User
+
+04-02-2026T15:26:38 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/GET_User_List")): Send request and verify the response successfully
+
+04-02-2026T15:26:40 - [MESSAGE][INFO] - HAR: C:\Users\Secondary\Katalon Studio\API\Reports\20260204_152623\API\API_User\20260204_152623\requests\main\GET_User_List_0.har
+
+04-02-2026T15:26:40 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36' \
+  'https://jsonplaceholder.typicode.com/posts/1'
+
+04-02-2026T15:26:40 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+04-02-2026T15:26:40 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+04-02-2026T15:26:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+04-02-2026T15:26:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+04-02-2026T15:26:40 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", 1): Verify element property value successfully
+
+04-02-2026T15:26:40 - [MESSAGE][PASSED] - Verify element property value successfully
+
+04-02-2026T15:26:40 - [TEST_STEP][PASSED] - containsString(response, "sunt aut facere", false): Check contain string successfully
+
+04-02-2026T15:26:41 - [MESSAGE][PASSED] - Check contain string successfully
+
+04-02-2026T15:26:41 - [MESSAGE][PASSED] - Verify response successfully
+
+04-02-2026T15:26:41 - [MESSAGE][PASSED] - All validation steps have been passed
+
+04-02-2026T15:26:41 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+04-02-2026T15:26:41 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("API/POST_User_List")): Send request and verify the response successfully
+
+04-02-2026T15:26:41 - [MESSAGE][INFO] - HAR: C:\Users\Secondary\Katalon Studio\API\Reports\20260204_152623\API\API_User\20260204_152623\requests\main\POST_User_List_1.har
+
+04-02-2026T15:26:41 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --request POST \
+  --data '{"title":"API Katalon","body":"Ini adalah postingan pertama Arief Rachman Maulana","userId":1}' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36' \
+  'https://jsonplaceholder.typicode.com/posts'
+
+04-02-2026T15:26:42 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+04-02-2026T15:26:42 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+04-02-2026T15:26:42 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+04-02-2026T15:26:42 - [MESSAGE][PASSED] - Verify response status code successfully
+
+04-02-2026T15:26:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "title", "API Katalon"): Verify element property value successfully
+
+04-02-2026T15:26:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+04-02-2026T15:26:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", 101): Verify element property value successfully
+
+04-02-2026T15:26:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+04-02-2026T15:26:42 - [MESSAGE][PASSED] - Verify response successfully
+
+04-02-2026T15:26:42 - [MESSAGE][PASSED] - All validation steps have been passed
+
+04-02-2026T15:26:42 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[04-02-2026T15:26:36 - [TEST_SUITE][PASSED] - API_User: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

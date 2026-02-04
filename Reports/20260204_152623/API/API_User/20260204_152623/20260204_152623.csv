@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+API_User,,,,04-02-2026 15:26:36,04-02-2026 15:26:42,"5,766s",PASSED
+,,,,,,,
+Test Cases/TC_API_User,,,,04-02-2026 15:26:37,04-02-2026 15:26:42,"4,327s",PASSED
+"sendRequestAndVerify(findTestObject(""API/GET_User_List""))",,,,04-02-2026 15:26:38,04-02-2026 15:26:41,"2,548s",PASSED
+"sendRequestAndVerify(findTestObject(""API/POST_User_List""))",,,,04-02-2026 15:26:41,04-02-2026 15:26:42,"1,073s",PASSED
