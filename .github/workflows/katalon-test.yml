@@ -2,9 +2,9 @@ name: Katalon API CI/CD
 
 on:
   push:
-    branches: [ "main" ] # Berdasarkan gambar Git Staging lo, branch aktif adalah 'master'
+    branches: [ "master" ] # Tetap pakai master sesuai branch lo
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -14,9 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Katalon Studio Action
-        uses: katalon-studio/katalon-studio-github-action@v2 # Ubah dari v3 ke v2
+        uses: katalon-studio/katalon-studio-github-action@v2
         with:
-          version: 'latest'
+          # --- UBAH DI SINI ---
+          # Jangan pakai 'latest', pakai versi spesifik biar nggak error download
+          version: '9.6.0' 
           projectPath: '${{ github.workspace }}'
-          # Path Test Suite lo sudah benar sesuai struktur folder
           args: '-noGui -testSuitePath="Test Suites/API/API_User" -browserType="Web Service" -apiKey=${{ secrets.KATALON_API_KEY }}'
