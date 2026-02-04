@@ -1,22 +1,21 @@
-name: CI Katalon API Test
+name: Katalon API CI/CD
 
-# Menentukan kapan tes berjalan (setiap kali push ke main)
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ] # Sesuaikan dengan nama branch
   pull_request:
     branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Execute API
+      - name: Run Katalon Studio Action
         uses: katalon-studio/katalon-studio-github-action@v3
         with:
           version: 'latest'
-          args: '-noSplash -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }}'
+          projectPath: '${{ github.workspace }}'
+          args: '-noGui -testSuitePath="Test Suites/API/API_User" -browserType="Web Service" -apiKey=${{ secrets.KATALON_API_KEY }}'
