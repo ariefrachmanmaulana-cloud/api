@@ -2,9 +2,9 @@ name: Katalon API CI/CD
 
 on:
   push:
-    branches: [ "master" ] # Tetap pakai master sesuai branch lo
+    branches: [ "main" ] 
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Run Katalon Studio Action
+      - name: Run Katalon API
         uses: katalon-studio/katalon-studio-github-action@v2
         with:
           # --- UBAH DI SINI ---
